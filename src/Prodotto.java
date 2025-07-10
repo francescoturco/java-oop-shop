@@ -16,6 +16,24 @@ public class Prodotto {
         this.codice = rand.nextInt(10000);
     }
 
+    //Metodi
+    public double getPrezzoBase() {
+        return prezzo;
+    }
+
+
+    public double getPrezzoConIva() {
+        return prezzoConIva = prezzo + (prezzo * iva / 100);
+    }
+
+
+    public String getNomeEsteso() {
+        return codice + "-" + nome;
+    }
+
+
+
+
 
 
 }
